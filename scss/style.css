@@ -31,11 +31,19 @@
 }
 
 .header, .footer {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: auto;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 39px 30px;
+  padding: 30px;
 }
 
 .header nav, .footer nav {
@@ -54,6 +62,50 @@
 
 .header .nav-link:hover, .footer .nav-link:hover {
   background-color: #F0D8C3;
+}
+
+.header .icon, .footer .icon {
+  display: none;
+  padding: 10px 11px;
+  border: 2px solid #231F20;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header, .footer {
+    position: relative;
+  }
+  .header .icon, .footer .icon {
+    display: block;
+  }
+  .header .headerNav, .footer .headerNav {
+    display: none;
+  }
+  .header .headerNav.responsive, .footer .headerNav.responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 38px;
+    right: 80px;
+    z-index: 999;
+  }
+  .header .nav-link, .footer .nav-link {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header .headerNav.responsive, .footer .headerNav.responsive {
+    top: 100px;
+    right: 0px;
+    width: 100%;
+  }
 }
 
 .user {
@@ -80,8 +132,6 @@
 }
 
 .logo a {
-  position: absolute;
-  float: left;
   font-family: 'Kanit', sans-serif;
   font-size: 48px;
   font-weight: 600;
@@ -98,12 +148,11 @@ footer {
   border-top: 2px solid #F0D8C3;
 }
 
-footer .logo a {
-  top: 30px;
-}
-
 footer .footer {
   height: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 footer .footer-navs {
@@ -127,6 +176,39 @@ footer .footer-navs nav {
           flex-direction: column;
 }
 
+@media screen and (max-width: 1200px) {
+  footer {
+    margin-top: 50px;
+  }
+  footer .footer-navs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-navs nav {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    margin-top: 50px;
+  }
+  footer .logo {
+    margin-bottom: 50px;
+  }
+  footer .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .bandeau {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +219,7 @@ footer .footer-navs nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: 550px;
   background-image: url(../img/bandeau.jpg);
   background-color: #231F20;
   background-position: center;
@@ -184,9 +266,37 @@ footer .footer-navs nav {
   padding-top: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  .bandeau {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bandeau {
+    height: 300px;
+  }
+  .bandeau .bandeau-presentation {
+    max-width: 100%;
+  }
+  .bandeau .bandeau-presentation h1 {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+  .bandeau .bandeau-presentation p {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+}
+
 .bandeau-artiste {
-  height: 350px;
-  max-width: 100%;
+  min-height: 350px;
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
   overflow: hidden;
 }
 
@@ -194,6 +304,22 @@ footer .footer-navs nav {
   width: auto;
   height: 100%;
   display: block;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .bandeau-artiste {
+    min-height: 550px;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+  .bandeau-artiste img {
+    height: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 
 article .oeuvre {
@@ -275,6 +401,21 @@ article .oeuvre-tech {
   padding: 15px;
 }
 
+@media screen and (max-width: 1200px) {
+  .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comment .comment-auteur {
+    width: 100%;
+  }
+  .comment .comment-content {
+    width: 100%;
+  }
+}
+
 .form, .form-comment, .form-galerie {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +461,19 @@ article .oeuvre-tech {
   padding: 30px;
 }
 
-.button, main .pagination .page {
+@media screen and (max-width: 1200px) {
+  .form-galerie {
+    display: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .form-galerie.filter {
+    display: block;
+  }
+}
+
+.button, #filter-btn, main .pagination .page {
   padding: 15px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -329,10 +482,21 @@ article .oeuvre-tech {
   border-radius: 5px;
 }
 
-.button:hover, main .pagination .page:hover {
+.button:hover, #filter-btn:hover, main .pagination .page:hover {
   color: #FFFFFF;
   background-color: #8A3324;
   border: 1px solid #8A3324;
+}
+
+#filter-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #filter-btn {
+    display: block;
+    margin-bottom: 30px;
+  }
 }
 
 * {
@@ -386,6 +550,12 @@ main section {
   padding: 50px 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  main section {
+    padding-bottom: 0;
+  }
+}
+
 main .grid {
   display: -ms-grid;
   display: grid;
@@ -402,6 +572,7 @@ main .breadcrumb {
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
+  background-color: #231f20b7;
 }
 
 main .breadcrumb a {
@@ -418,7 +589,8 @@ main .artiste-present {
   display: -ms-flexbox;
   display: flex;
   border: 2px solid #F0D8C3;
-  margin-top: 50px;
+  margin: 50px 30px 0 30px;
+  padding: 0;
 }
 
 main .artiste-present .avatar {
@@ -427,9 +599,10 @@ main .artiste-present .avatar {
   height: 240px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  left: 20%;
-  right: 20%;
-  top: -200px;
+  top: -50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -443,14 +616,56 @@ main .artiste-present .artiste-info {
   position: relative;
   width: 33%;
   text-align: center;
-  padding: 50px 30px 0 0;
+  padding: 50px 30px;
 }
 
 main .artiste-present .artiste-bio {
   text-align: left;
   width: 66%;
   border-left: 2px solid #F0D8C3;
-  padding-left: 30px;
+  padding: 50px 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .artiste-present {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 50px 30px 0 30px;
+  }
+  main .artiste-present h1 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  main .artiste-present .artiste-bio {
+    width: 100%;
+    border-top: 2px solid #F0D8C3;
+    border-left: none;
+    padding: 30px;
+    margin-top: 30px;
+  }
+  main .artiste-present .artiste-info {
+    width: 100%;
+    text-align: center;
+    padding: 50px 30px;
+  }
+  main .artiste-present .avatar {
+    top: -70%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 800px) {
+  main .artiste-present {
+    margin: 50px 5px 0 5px;
+  }
+  main .artiste-present h1 {
+    width: 80%;
+  }
 }
 
 main .oeuvre-container {
@@ -491,9 +706,33 @@ main .oeuvre-container .oeuvre-img {
 
 main .oeuvre-container .oeuvre-img img {
   display: block;
-  max-width: 66%;
+  max-width: 100%;
   max-height: 650px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  main .oeuvre-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .oeuvre-container .oeuvre-present {
+    width: 100%;
+    padding-left: 0;
+  }
+  main .oeuvre-container .oeuvre-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  main .oeuvre-container .oeuvre-img img {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    margin: 0;
+  }
 }
 
 main .galerie-list {
@@ -505,6 +744,18 @@ main .galerie-list {
 main .galerie-list .grid {
   width: 75%;
   margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  main .galerie-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 main .pagination {

@@ -1,12 +1,9 @@
 footer {
     border-top: 2px solid $linen;
 
-    .logo a {
-        top: 30px;
-    }
-
     .footer {
         height: auto;
+        align-items: flex-start;
     }
     .footer-navs {
         display: flex;
@@ -20,5 +17,25 @@ footer {
         }
     }
 
-    
+    @include tablette {
+        margin-top: 50px;
+        .footer-navs {
+            flex-direction: column;
+
+            nav {
+                margin-bottom: 30px;
+            };
+        }
+    }
+    @include mobile {
+        margin-top: 50px;
+        .logo {
+            margin-bottom: 50px;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

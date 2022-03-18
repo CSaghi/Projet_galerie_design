@@ -40,4 +40,20 @@
         width: 75%;
         padding: 15px;
     }
+
+    @include tablette {
+        flex-direction: column;
+        .comment-auteur {
+            width: 100%;
+        }
+
+        .comment-content {
+            width: 100%;
+        }
+    }
+
+    @include mobile {
+
+    }
+
 }

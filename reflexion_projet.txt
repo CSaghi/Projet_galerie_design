@@ -55,7 +55,7 @@ Structure de la BDD:
         - pays
         - date d'inscription
         - slug
-        - photo de presentaton
+        - avatar
         - image bandeau 
         - token
         - verification
@@ -67,6 +67,9 @@ Structure de la BDD:
         - slug
         - images -> relation avec image
         - auteur -> relation avec user
+        - dimensions
+        - année 
+        -technique
         - description
         - date de creation
 

@@ -38,7 +38,21 @@
     height: fit-content;
     margin-right: 30px;
     padding: 30px;
+
+   
+
+    @include tablette {
+        display: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+
+        &.filter {
+            display: block;
+        }
+    }
 }
+
 
 .button {
     padding: 15px;
@@ -51,4 +65,16 @@
         background-color: $umber;
         border: 1px solid $umber;
     }
+}
+
+#filter-btn {
+    @extend .button;
+
+    display: none;
+    @include tablette {
+        display: block;
+        margin-bottom: 30px;
+        
+    }
+
 }

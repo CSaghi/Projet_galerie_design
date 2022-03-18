@@ -1,6 +1,6 @@
 .bandeau {
     @include flex-center;
-    height : 80vh;
+    height: 550px;
     background-image: url(../img/bandeau.jpg);
     background-color:$black;
     background-position: center;
@@ -35,17 +35,51 @@
         }
     }
     
+    @include tablette {
+        height: 450px;
+    }
+
+    @include mobile {
+        height: 300px;
+        .bandeau-presentation {
+            max-width: 100%;
+
+            h1 {
+                font-size: 40px;
+                padding-bottom: 15px; 
+            }
+            p {
+                font-size: 18px;
+                padding-top: 15px;
+            }
+        }
+    }
 }
 
 .bandeau-artiste {
-    height: 350px;
-    max-width: 100%;
+    min-height: 350px;
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
     overflow: hidden;
     
     img {
         width: auto;
         height: 100%;
         display: block;
-       
+        max-width: 100%;
+    }
+
+    @include mobile {
+       min-height: 550px; 
+       min-width: max-content;
+        
+       img {
+           height: auto;
+           width: max-content;
+       }
     }
 }

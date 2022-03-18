@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Poppins:ital,wght@0,400;1,300;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6e5f3bc3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="scss/style.css">
     <title>ArtTruc - Accueil</title>
 </head>
@@ -17,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">ArtTruc</a>
             </div>
-            <nav>
+            <nav id="headerNav" class="headerNav">
                 <a href="artiste.html" class="nav-link">Artistes</a>
                 <a href="oeuvre-list.html" class="nav-link">Dessin</a>
                 <a href="oeuvre-list.html" class="nav-link">Peinture</a>
@@ -25,6 +26,9 @@
                 <a href="oeuvre-list.html" class="nav-link">Photographie</a>
                 <a href="oeuvre-list.html" class="nav-link">Numérique</a>
             </nav>
+            <a href="javascript:void(0);" class="" onclick="responsive()">
+                <i class="fa fa-bars icon"></i>
+            </a>
         </div>
 
         <div class="user-nav bg-black">
@@ -39,7 +43,7 @@
             <div class="bandeau-presentation">
                 <h1 class="white">Galerie d'art en ligne</h1>
                 <p class="white">
-                    Découvrez nos artistes amateurs ou professionnels et rejoignez notre communauté pour exposer, échanger ou commenter des oeuvres en ligne
+                    Découvrez nos artistes amateurs ou professionnels et rejoignez notre communauté pour exposer, découvrir ou commenter des oeuvres en ligne
                 </p>
             </div>
         </div>
@@ -192,6 +196,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
     <script src="js/masonry.js"></script>
 </body>
 </html>

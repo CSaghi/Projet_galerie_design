@@ -1,9 +1,11 @@
 .header, .footer {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: auto;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 39px 30px;
+    padding: 30px;
 
     nav {
         margin: 0px auto;
@@ -25,6 +27,48 @@
         }
     }
 
+    .icon {
+        display: none;
+        padding: 10px 11px; 
+        border: 2px solid $black;
+        border-radius: 5px;
+ 
+    }
+
+    @include tablette {
+        position: relative;
+
+        .icon {
+            display: block;
+        }
+
+        .headerNav {
+            display: none;
+        } 
+
+        .headerNav.responsive {
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            position: absolute;
+            top: 38px;
+            right: 80px;
+            z-index: 999;
+        }
+
+        .nav-link {
+            padding: 5px 15px
+        }
+    }
+
+    @include mobile {
+        .headerNav.responsive {
+            top: 100px;
+            right: 0px;
+            width: 100%;
+        }
+    }
+
 }
 .user {
     @include flex-center;
@@ -41,8 +85,7 @@
 }
 
 .logo a{
-    position: absolute;
-    float: left;
+    // position: absolute;
     font-family: 'Kanit', sans-serif;
     font-size: 48px;
     font-weight: 600; 

@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Poppins:ital,wght@0,400;1,300;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6e5f3bc3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="scss/style.css">
-    <title>ArtTruc - Oeuvre</title>
+    <title>ArtTruc - Accueil</title>
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">ArtTruc</a>
             </div>
-            <nav>
+            <nav id="headerNav" class="headerNav">
                 <a href="artiste.html" class="nav-link">Artistes</a>
                 <a href="oeuvre-list.html" class="nav-link">Dessin</a>
                 <a href="oeuvre-list.html" class="nav-link">Peinture</a>
@@ -25,6 +26,9 @@
                 <a href="oeuvre-list.html" class="nav-link">Photographie</a>
                 <a href="oeuvre-list.html" class="nav-link">Numérique</a>
             </nav>
+            <a href="javascript:void(0);" class="" onclick="responsive()">
+                <i class="fa fa-bars icon"></i>
+            </a>
         </div>
 
         <div class="user-nav bg-black">
@@ -42,7 +46,7 @@
             <div class="oeuvre-present">
                 <h1 class="umber">Titre de l'oeuvre</h1>
             <h2 class="umber">Nom de L'artiste</h2>
-            <h3 class="umber">Technique et matériaux, taille, année</h3>
+            <h3 class="umber">Technique et matériaux, dimensions, année</h3>
             <p class="oeuvre-texte">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere temporibus quaerat sint distinctio corporis dolorum odio animi eligendi dolore expedita? Deserunt modi est corrupti nihil earum delectus quas beatae amet!
             </p>
@@ -300,6 +304,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
     <script src="js/masonry.js"></script>
 </body>
 </html>
