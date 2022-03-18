@@ -1,0 +1,71 @@
+#Êtes-vous prêt pour le jury DAM ?
+1. A quels besoins répondez-vous avec votre site web?° //
+2. Quel est le but précis de votre site?° //
+3. Avez-vous fait une présentation du marché et le positionnement de votre site par rapport à d’autres sites?//
+4. Quelles sont les cibles que vous voulez toucher?°//
+5. Avez-vous fait un benchmark? //
+6. Quels sont les points forts que vous tirez de la concurrence? Et lesquels avez-vous utilisés?°
+7. Quelles sont les extensions utilisées sur WordPress?°//
+8. Votre site est-il terminé?
+9. Est-ce toutes vos pages comportent un titre (balise H1)?
+10. Avez-vous pensé à placer un FavIcon à côté de votre URL?
+11. Votre site comporte-t-il les mentions légales dans le pied de page?
+12. Avez-vous créé une page spéciale de la politique de confidentialité que vous avez placé dans le pied de page?
+13. Avez-vous mis un bandeau RGPD pour accepter les cookies?
+14. Avez-vous présenté le planning pour présenter l’organisation des différentes étapes de votre projet?
+15. Avez-vous estimé le coût de ce projet?
+16. Avez-vous mis en place une stratégie marketing? Pouvez-vous la présenter en quelques phrases?°
+17. Avez-vous utilisé des effets de leviers pour valoriser votre site?
+18. En matière de droit d’auteur, avez-vous respecté la propriété intellectuelle des images qui sont présentes sur votre site?//
+19. Sur quels réseaux sociaux allez-vous vous reposer en complément de votre site?°
+20. Avez-vous créé des personas (3 minimum)?//
+21. Avez-vous réalisé un SWOT?
+22. Avez-vous mis en place un Digramme e GANTT ou Planning prévisionnel?
+23. Votre cahier des charges est-il bien structuré (numéroté et illustré)?
+24. Votre cahier des charges comporte-t-il des fautes d’orthographe?
+25. Architecture de projet : avez-vous fait un squelette de votre site?//
+26. Avez-vous fait des wireframes?//
+27. Le choix et l’ordre de vos rubriques sont-ils pertinents?
+28. Votre page d’accueil est-elle suffisamment claire pour être comprise au premier coup d’œil?//
+29. Votre site est-il consultable depuis un smartphone?
+30. De quelle manière avez-vous pensé à exploiter les mots clés dans la rédaction de votre contenu?°
+31. Votre site est-il en ligne chez un hébergeur?
+32. Êtes-vous en capacité de justifier le choix de cet hébergeur?
+33. Avez-vous testé votre site?
+34. Avez-vous réglé tous les dysfonctionnements que vous avez rencontré?
+35. Considérez-vous que le design de votre site est original et unique?
+36. Avez-vous fait un effort de personnalisation de votre site?
+37. Votre charte graphique est-elle définie dans votre cahier des charges?
+38. Pouvez-vous garantir que votre charte graphique est à 100% respectée sur votre site?
+39. Votre site est-il facile et pratique à utiliser?
+40. Votre site comporte-t-il des erreurs de code HTML?
+41. Avez-vous testé votre site sur plusieurs navigateurs?
+42. Avez-vous testé votre site sur un Mac et un PC?
+43. En développement, quels sont les langages de programmation utilisés pour votre projet?°
+44. Avez-vous exploité et personnalisé la partie Back-Office de votre site?
+45. Avez-vous présenté l’ensemble des plugin utilisés? (Si Wordpress)//
+46. Avez-vous pu personnaliser le formulaire d’identification pour entrer dans le back office?
+47. Avez-vous utilisé une extension pour optimiser votre référencement?//
+48. Avez-vous mis en place un outil de mesure d’audience pour suivre la fréquentation de votre site?
+49. Avez-vous défini une stratégie pour le SEO?
+50. Vos slides de présentation sont-elles numérotées?
+51. Comportent-elles toutes un titre placé au même endroit?
+52. Vous êtes-vous chronométré pour la présentation orale de votre projet?
+53. Avez-vous mis en place une veille technologique?
+54. Avez-vous mis en place des mesures pour assurer la sécurité de votre site?
+55. Êtes-vous en mesure de présenter les avantages que vous avez su retirer de cette expérience?
+56. Êtes-vous en capacité d’expliquer en quelques phrases les activités et les compétences acquises au cours de votre stage?
+57. Pensez-vous être pertinent dans le choix de la stratégie de communication et des moyens au regard des besoins du client?
+58. Pour une présence sociale active sur le web, avez-vous variés vos outils?
+59. Avez-vous identifié les communautés pertinentes au regard des besoins du client?
+60. La charte éditoriale est-elle adaptée à chaque outil de diffusion de chacun des réseaux sociaux ciblés et à chaque typologie de public ciblé?
+61. Trouvez-vous votre rédaction claire et bien structurée?
+62. Avez-vous établi une liste d’influenceurs, de communautés et.ou forums en ligne stratégiques, pour chaque réseau social?
+63. Avez-vous une liste d’indicateurs et d’outils pour automatiser la veille et permettre une surveillance de la réputation numérique au quotidien?
+64. Avez-vous créé plusieurs comptes pour chacun des médias sociaux ciblés dans le plan de communication?
+65. Avez-vous pensé aux droits et rôles de chaque compte utilisateur dans le respect des règles de sécurité?
+66. Avez-vous varié vos outils pour avoir une présence sociale active sur le web?
+67. Avez-vous adapté le poids de vos différents fichiers en fonction du support de diffusion?
+68. Avez-vous automatisée votre veille sur la e-réputation? Votre réseau d’influenceurs est-il exploité avec pertinence?
+69. Êtes-vous capable de répondre rapidement à un commentaire négatif?
+70. A quelle fréquence analysez-vous vos résultats?

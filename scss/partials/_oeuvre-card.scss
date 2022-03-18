@@ -1,0 +1,29 @@
+article {
+
+    .oeuvre {
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+            display: block;
+            
+        }
+    }
+    .oeuvre-info {
+        padding-top: 15px;
+    }
+    .oeuvre-titre {
+        margin-bottom: 15px;
+    }
+
+    .oeuvre-artiste {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .oeuvre-tech {
+        font-style: italic;
+        font-weight: 300;
+    }
+}

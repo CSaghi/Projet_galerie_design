@@ -1,0 +1,223 @@
+                ##### Réflexion et concept autour du projet perso pour le diplome DAM #####
+                -----------------------------------------------------------------------------
+
+
+
+Idée : Site de galerie en ligne
+-------------------------------
+
+Un site permettant aux utilisateurs de créer ou de consulter une galerie d'oeuvre en ligne, de contacter des artistes voire potentielement de faire des achats.
+
+Nom du site : à définir ; ART-TRUC pour le moment.
+
+Fonctionalité pour l'utilisateur anonyme:
+    - Accès aux galerie d'images des artistes inscrit sur le site, il peux consulter une page de présentation, une galerie avec les travaux mis en ligne par l'artiste, voir chaque image plus en détail et entrer en contact avec l'artiste.
+    - Accès à un mega menu qui lui permet de naviguer sur le site et de voir les différentes catégories et sous catégories disponible afin de l'aider à trouver des oeuvres qui lui plaisent.
+    - Accès à une fonction recherche pour trouver plus facilement.
+
+Fonctionalité pour l'utlisateur inscrit:
+    - Accès à la création d'une page de profil ou il pourra se présenter ainsi que son travail.
+    - Upload d'image sur le site avec sytème de catégorie ou de de tag afin d'aider la visibilité de ses ouevres.
+    - Management complet de toute les infos qu'il met à disposition des autres utilisateurs, modification, suppression de contenu qu'il a mis en ligne
+    - Liens vers les réseaux sociaux ou son site perso s'il en a un.
+    - Possibilité de poster des commentaires sur les oeuvres des autres artistes et de répondre aux commentaires sur ses oeuvres à lui
+    - Système de like et de tag?
+
+Fonctionalité de l'admin:
+    - Accès à absolument tout le contenu du site, avec possibilité de modification et de suppression.
+    - Accès à différent dashboard lui pertant de gérer plus facilement le contenu du site.
+
+------------------------------------
+
+Element important général :
+    - Utilisation de slug dans les URL accessibles aux utilisateurs, le nom de l'artiste, le titre de l'oeuvre, les différentes catégories et sous catégories, tout doit etre visible dans l'URL pour faciliter la SEO
+    - Bonne Structure de titre et des différente balise HTML, encore une fois pour le SEO avec :
+        - H1 pour le nom du site, sur toute les pages.
+        - H2 pour le nom de l'artiste et de l'oeuvre.
+        - H3 pour les Commentaire et nom de bloc global.
+    - Optimisation de la taille des images, utilisation de miniature dès que possible et passage par une lightbox pour des versions grands formats.
+    - Tri par catégories et sous catégories pour faciliter la navigation.
+    - Fonction de recherche.
+    - Design simple qui met en avant les oeuvres.
+    - Classement des oeuvres par nouveauté ou par popularité (like).
+
+------------------------------------
+
+Structure de la BDD:
+
+    Table user
+        - id
+        - role
+        - adresse mail
+        - mot de passe
+        - nom
+        - prenom
+        - pays
+        - date d'inscription
+        - slug
+        - photo de presentaton
+        - image bandeau 
+        - token
+        - verification
+
+    Table oeuvre 
+        - id
+        - nom
+        - categorie -> relation avec categorie
+        - slug
+        - images -> relation avec image
+        - auteur -> relation avec user
+        - description
+        - date de creation
+
+    Table image
+        - id
+        - nom
+        - oeuvre -> relation avec oeuvre
+        
+    Table categorie
+        - id
+        - nom
+        - oeuvre -> relation avec oeuvre
+        - slug
+        
+    Table commentaire 
+        - id
+        - auteur -> relation avec user 
+        - oeuvre -> relation avec oeuvre
+        - date de creation
+        - reponse -> relation avec commentaire
+        
+    Table tag?
+        - id
+        
+    Table like?
+        - id
+        
+
+------------------------------------
+
+Fonctionalité obligatoire:
+    - Page d'accueil avec galerie des dernières oeuvres.
+    - Formulaire d'inscription avec connexion et deco.
+    - Création de compte artiste.
+    - Gestion de profil artiste.
+    - Classement par catégorie.
+    - Gestion des images et optimisation.
+    - Fonctionalité administration avec accès sécurisé.
+    - Formulaire de contact vers l'artiste.
+    - Ajout de commentaire pour les utilisateurs connecté et système de réponse.
+
+Fonctionalité secondaire:
+    - Fonction de recherche sur le site.
+    - Système de like et tri par popularité.
+    - Système de tag.
+
+    
+
+
+
+
+
+                                    ###############################                                        ###############################         
+                                    ###############################             Recherche  SEO             ###############################
+                                    ###############################                                        ###############################
+
+
+Recherche longue traine : Galerie d'art en ligne.
+Resultat d'analyse de recherche google: Peu pertinent, les seuls mots clé qui reviennent régulierement étant "gratuit" et des noms de pays (Belgique, Quebec, Maroc...), le nom du site "artmajeur" revient régulièrement.
+
+Mot clé important: Art, Artiste, Oeuvre, type de médium (peinture, dessin, aquarelle, sculpture...) et nom d'artiste. (idéalement artiste connu)
+
+Recherche de sites exsitants :
+
+Artmajeur
+---------
+
+- Premier site sur google (hors annonce).
+- Disponible en plusieurs langues.
+- Excelente structure de titre sur la page d'accueil, de h1 à h4:
+    - h1 : Galerie d'Art en ligne.
+    - h2 : utilisation de mots clés important : "Achetez", "oeuvre", "art"...
+    - h3 : sous catégorie, mise en avant de mots clées liés à la vente.
+    - h4 : souvent sous forme de question :  "Comment acheter de l'art en toute sécurité ?", "A quoi sert une galerie d'art contemporain en ligne ?"...
+- Attribut alt bien présente avec nom de l'artiste.
+- Ligne de flotaison bien placé.
+- Mega menu avec catégorie et sous catégorie.
+- Breadcrumb sur toute les pages hors accueil. (mais parfois illisble selon le bandeau choisi par l'artiste sur sa page profil)
+- Catégorie, nom d l'artiste et nom de l'oeuvre dans l'url.
+- Pas de h1 sur la page profil de l'artiste, nom de l'artiste en h2, sauf sur la partie présentation, h1 : "Présentation & Biographie" avec structure étrange: page qui commence en h2, puis h4 sans h3, le h1 arrive ensuite puis h4 sans h2 ni h3
+- Même chose sur les oeuvres avec le h1 ayant le nom de l'oeuvre.
+
+Avis global : Excellent, seuls quelques soucis de structure sur les pages profils et oeuvre d'art.
+
+
+Kazoart
+-------
+
+- 3ieme site sur google, mais sort dans les annonces.
+- Français et anglais
+- Catégorie NFT.
+- Bonne structure de titre sur la page d'accueil.
+- Attribut alt n'est pas sur toute les images.
+- Bonne ligne de flotaison, avec très certainement une utilisation des unités de mesure viewport pour forcer la mise en page sur ceratins éléments.
+- Breadcrumb sur toute les pages.
+- Bonne structure de titre sur page profil, h1 pour le nom de l'artsite, h2 pour ses oeuvres.
+- Moins bien pour les oeuvres, nom de l'artiste et nom de l'oeuvre en h1 et structure parfois étrange selon l'oeuvre, doit dépendre des infos donées par l'artiste.
+
+Avis global : Un peu moins bien globalement de Artmajeur, s'interesse au NFT.
+
+
+Singulart
+---------
+
+- Premier resultat dans les annonces google, 6ieme ou 7ieme place dans les recherches normales.
+- Plusieurs langue
+- Ligne de flotaison bien placé.
+- Structure de titre étrange en page d'accueil, h1 tout en bas de la page, premier h2 "Œuvres susceptibles de vous plaire" (??), beaucoup de mises en avant de vente/achats
+- Attribut alt pas toujours remplis, mais présent sur les images importantes (manque sur les icones et placeholder).
+- Breadcrumb présent avec un petit bloc de couleur pour qu'il reste lisible meme sur les bandeau de présentation d'artiste.
+- Bonne structure de titre sur la page profil, en dehors du h1 en trop en bas
+- Même chose sur la page oeuvre.
+
+Avis global : Dans la lignée des sites précédent, design peut etre un poil plus intrusif et vraiment tres centré vente en ligne.
+
+
+
+Arborescence du site : https://www.gloomaps.com/3ZJKNQdoZ2
+Lien figma : https://www.figma.com/file/BkRaBORreZLdhD9EZo0biM/Projet-galerie?node-id=3%3A73
+
+Présentation du projet :
+------------------------
+
+ART-TRUC est un site de galerie d'art en ligne. Son but est de permettre à ses utilisateurs de mettre en ligne différents type d'oeuvres graphique (peinture, dessin, photos...) afin de constituer une galerie et présenter leurs travaux.
+Il s'adresse aussi bien aux amateurs qu'aux professionels, ainsi qu'à tout amateur d'art qui souhaite découvrir des artistes actuels.
+
+Personas:
+---------
+
+Jean Jean:
+
+Il est artiste amateur, il a travaillé dans un port et aime particulièrement les aquarelles et marines, il en réalise sur son temps libre et aimerait partager ses travaux avec d'autres passionés comme lui.
+
+Florence :
+
+Elle a fait une école d'art et est portraitiste professionelle, elle a un site perso et utilise les réseaux sociaux mais souhaite augmenter la visibilité de ses oeuvres. Elle réalise aussi des nus et a de sérieux problèmes avec les reseaux sociaux pour faire connaitre ce type d'oeuvre.
+
+Stéphane :
+
+Simple amateur d'art, il cherche un site simple et communautaire qui lui permettera de découvrir ce qui se fait actuelement et de suivre des artistes.
+
+
+Fonts:
+------
+
+Kanit pour les titres et navigations.
+Poppins pour les textes.
+
+
+Planning prévisionnel :
+------------------------
+
+Du 07 mars 2022  au 18 mars 2022:
+Mise en place du projet, benchmark de la concurence, définition fonctionelle, arborescence du site, wireframe et charte graphique.

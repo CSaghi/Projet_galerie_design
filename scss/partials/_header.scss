@@ -1,0 +1,58 @@
+.header, .footer {
+    position: relative;
+    height: auto;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 39px 30px;
+
+    nav {
+        margin: 0px auto;
+        text-align: center;
+    }
+    
+
+
+    .nav-link {
+        font-family: 'Kanit', sans-serif; 
+        font-size: 18px; 
+        font-weight: 400; 
+        margin: 5px 10px; 
+        padding: 5px;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $linen;
+        }
+    }
+
+}
+.user {
+    @include flex-center;
+    max-width: 1440px;
+    height: 35px;
+    margin: 0 auto;
+
+    a {
+        font-family: 'Kanit', sans-serif; 
+        &:hover {
+            color: $linen;
+        }
+    }
+}
+
+.logo a{
+    position: absolute;
+    float: left;
+    font-family: 'Kanit', sans-serif;
+    font-size: 48px;
+    font-weight: 600; 
+    padding: 0 5px;
+    left: 30px;
+    top: 18px;
+   
+    
+
+    &:hover {
+        background-color: $linen;
+    }
+}

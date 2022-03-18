@@ -1,0 +1,51 @@
+.bandeau {
+    @include flex-center;
+    height : 80vh;
+    background-image: url(../img/bandeau.jpg);
+    background-color:$black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .bandeau-presentation {
+        @include flex-center;
+
+        flex-direction: column;
+        background: rgba(35, 31, 32, 0.85);
+        padding: 30px;
+        max-width: 80%;
+
+
+        h1 {
+            font-family: 'Kanit', sans-serif; 
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 600; 
+            padding-bottom: 30px;
+            width: fit-content;
+            border-bottom: 2px solid $white;
+        }
+    
+        p {
+            text-align: center;
+            font-family: 'Kanit', sans-serif;
+            font-size: 24px;
+            padding-top: 30px;
+        }
+    }
+    
+}
+
+.bandeau-artiste {
+    height: 350px;
+    max-width: 100%;
+    overflow: hidden;
+    
+    img {
+        width: auto;
+        height: 100%;
+        display: block;
+       
+    }
+}

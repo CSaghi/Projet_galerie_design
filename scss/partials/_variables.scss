@@ -1,0 +1,20 @@
+$black: #231F20;
+$white: #FFFFFF;
+$linen: #F0D8C3;
+$umber: #8A3324;
+
+.black {color:$black;}
+.white {color:$white;}
+.linen {color:$linen;}
+.umber {color:$umber;}
+
+.bg-black {background-color:$black;}
+.bg-white {background-color:$white;}
+.bg-linen {background-color:$linen;}
+.bg-umber {background-color:$umber;}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

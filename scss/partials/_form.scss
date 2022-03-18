@@ -1,0 +1,54 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    
+    label {
+        margin-bottom: 5px;
+    }
+
+    input {
+        margin-bottom: 15px;
+
+        &:active {
+            color: $umber;
+        }
+    }
+
+    textarea {
+        border: 1px solid $umber;
+        border-radius: 7px 7px 0 7px;
+        box-shadow: 5px 5px 0px $linen;
+        padding: 15px;
+        margin-bottom: 15px;
+
+        &:focus {
+            outline: 2px solid $umber;
+        }
+    }
+
+}
+
+.form-comment {
+    @extend .form;
+}
+.form-galerie {
+    @extend .form;
+    border: 2px solid $linen;
+    width: 25%;
+    height: fit-content;
+    margin-right: 30px;
+    padding: 30px;
+}
+
+.button {
+    padding: 15px;
+    width: fit-content;
+    border: 1px solid $linen;
+    border-radius: 5px;
+
+    &:hover {
+        color: $white;
+        background-color: $umber;
+        border: 1px solid $umber;
+    }
+}

@@ -1,0 +1,24 @@
+footer {
+    border-top: 2px solid $linen;
+
+    .logo a {
+        top: 30px;
+    }
+
+    .footer {
+        height: auto;
+    }
+    .footer-navs {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    
+}

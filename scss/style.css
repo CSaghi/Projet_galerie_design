@@ -1,0 +1,522 @@
+.black {
+  color: #231F20;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.linen {
+  color: #F0D8C3;
+}
+
+.umber {
+  color: #8A3324;
+}
+
+.bg-black {
+  background-color: #231F20;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-linen {
+  background-color: #F0D8C3;
+}
+
+.bg-umber {
+  background-color: #8A3324;
+}
+
+.header, .footer {
+  position: relative;
+  height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 39px 30px;
+}
+
+.header nav, .footer nav {
+  margin: 0px auto;
+  text-align: center;
+}
+
+.header .nav-link, .footer .nav-link {
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 5px 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.header .nav-link:hover, .footer .nav-link:hover {
+  background-color: #F0D8C3;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.user a {
+  font-family: 'Kanit', sans-serif;
+}
+
+.user a:hover {
+  color: #F0D8C3;
+}
+
+.logo a {
+  position: absolute;
+  float: left;
+  font-family: 'Kanit', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  padding: 0 5px;
+  left: 30px;
+  top: 18px;
+}
+
+.logo a:hover {
+  background-color: #F0D8C3;
+}
+
+footer {
+  border-top: 2px solid #F0D8C3;
+}
+
+footer .logo a {
+  top: 30px;
+}
+
+footer .footer {
+  height: auto;
+}
+
+footer .footer-navs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer .footer-navs nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bandeau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  background-image: url(../img/bandeau.jpg);
+  background-color: #231F20;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bandeau .bandeau-presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(35, 31, 32, 0.85);
+  padding: 30px;
+  max-width: 80%;
+}
+
+.bandeau .bandeau-presentation h1 {
+  font-family: 'Kanit', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.bandeau .bandeau-presentation p {
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-size: 24px;
+  padding-top: 30px;
+}
+
+.bandeau-artiste {
+  height: 350px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.bandeau-artiste img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+article .oeuvre {
+  width: 100%;
+  height: auto;
+}
+
+article .oeuvre img {
+  width: 100%;
+  display: block;
+}
+
+article .oeuvre-info {
+  padding-top: 15px;
+}
+
+article .oeuvre-titre {
+  margin-bottom: 15px;
+}
+
+article .oeuvre-artiste {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+article .oeuvre-tech {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #F0D8C3;
+  margin-bottom: 15px;
+}
+
+.comment .comment-auteur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  padding: 15px;
+}
+
+.comment .comment-auteur .avatar-mini {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.comment .comment-auteur .avatar-mini img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.comment .comment-auteur .name {
+  margin-bottom: 10px;
+}
+
+.comment .comment-auteur .comment-date {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.comment .comment-content {
+  width: 75%;
+  padding: 15px;
+}
+
+.form, .form-comment, .form-galerie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form label, .form-comment label, .form-galerie label {
+  margin-bottom: 5px;
+}
+
+.form input, .form-comment input, .form-galerie input {
+  margin-bottom: 15px;
+}
+
+.form input:active, .form-comment input:active, .form-galerie input:active {
+  color: #8A3324;
+}
+
+.form textarea, .form-comment textarea, .form-galerie textarea {
+  border: 1px solid #8A3324;
+  border-radius: 7px 7px 0 7px;
+  -webkit-box-shadow: 5px 5px 0px #F0D8C3;
+          box-shadow: 5px 5px 0px #F0D8C3;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.form textarea:focus, .form-comment textarea:focus, .form-galerie textarea:focus {
+  outline: 2px solid #8A3324;
+}
+
+.form-galerie {
+  border: 2px solid #F0D8C3;
+  width: 25%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 30px;
+  padding: 30px;
+}
+
+.button, main .pagination .page {
+  padding: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #F0D8C3;
+  border-radius: 5px;
+}
+
+.button:hover, main .pagination .page:hover {
+  color: #FFFFFF;
+  background-color: #8A3324;
+  border: 1px solid #8A3324;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #231F20;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+h3, .comment .comment-auteur .name {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main section {
+  padding: 50px 30px;
+}
+
+main .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  grid-auto-rows: 10px;
+  margin-top: 50px;
+}
+
+main .breadcrumb {
+  padding: 5px 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+}
+
+main .breadcrumb a {
+  color: #FFFFFF;
+  font-style: italic;
+}
+
+main .breadcrumb a:hover {
+  color: #F0D8C3;
+}
+
+main .artiste-present {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #F0D8C3;
+  margin-top: 50px;
+}
+
+main .artiste-present .avatar {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  left: 20%;
+  right: 20%;
+  top: -200px;
+  overflow: hidden;
+}
+
+main .artiste-present .avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+main .artiste-present .artiste-info {
+  position: relative;
+  width: 33%;
+  text-align: center;
+  padding: 50px 30px 0 0;
+}
+
+main .artiste-present .artiste-bio {
+  text-align: left;
+  width: 66%;
+  border-left: 2px solid #F0D8C3;
+  padding-left: 30px;
+}
+
+main .oeuvre-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+main .oeuvre-container .oeuvre-present {
+  width: 33%;
+  padding-left: 30px;
+}
+
+main .oeuvre-container .oeuvre-present h1, main .oeuvre-container .oeuvre-present h2 {
+  text-align: left;
+}
+
+main .oeuvre-container .oeuvre-present h2 {
+  margin-bottom: 0;
+}
+
+main .oeuvre-container .oeuvre-present h3, main .oeuvre-container .oeuvre-present .comment .comment-auteur .name, .comment .comment-auteur main .oeuvre-container .oeuvre-present .name {
+  margin-bottom: 50px;
+}
+
+main .oeuvre-container .oeuvre-present .oeuvre-texte {
+  padding-bottom: 50px;
+  border-bottom: 2px solid #F0D8C3;
+}
+
+main .oeuvre-container .oeuvre-img {
+  width: 66%;
+}
+
+main .oeuvre-container .oeuvre-img img {
+  display: block;
+  max-width: 66%;
+  max-height: 650px;
+  margin: 0 auto;
+}
+
+main .galerie-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .galerie-list .grid {
+  width: 75%;
+  margin-top: 0;
+}
+
+main .pagination {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+main .pagination .page {
+  text-align: center;
+  display: inline-block;
+  min-width: 50px;
+  min-height: 50px;
+}
+/*# sourceMappingURL=style.css.map */
