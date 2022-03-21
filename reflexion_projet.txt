@@ -46,49 +46,50 @@ Element important général :
 Structure de la BDD:
 
     Table user
-        - id
-        - role
-        - adresse mail
-        - mot de passe
-        - nom
-        - prenom
-        - pays
-        - date d'inscription
-        - slug
-        - avatar
-        - image bandeau 
-        - token
-        - verification
+        - id //
+        - role //
+        - adresse mail //
+        - mot de passe //
+        - nom //
+        - prenom //
+        - pays //
+        - date de naissance //
+        - presentation //
+        - date d'inscription //
+        - slug //
+        - avatar //
+        - image bandeau //
+        - token //
+        - verification //
 
     Table oeuvre 
-        - id
-        - nom
-        - categorie -> relation avec categorie
-        - slug
-        - images -> relation avec image
-        - auteur -> relation avec user
-        - dimensions
-        - année 
-        -technique
-        - description
-        - date de creation
+        - id //
+        - titre //
+        - categorie -> relation avec categorie //
+        - slug //
+        - images -> relation avec image //
+        - auteur -> relation avec user //
+        - dimension //
+        - année //
+        - technique //
+        - description //
+        - date de creation //
 
     Table image
-        - id
-        - nom
-        - oeuvre -> relation avec oeuvre
+        - id //
+        - nom //
         
     Table categorie
-        - id
-        - nom
-        - oeuvre -> relation avec oeuvre
-        - slug
+        - id //
+        - nom //
+        - slug //
         
     Table commentaire 
-        - id
-        - auteur -> relation avec user 
-        - oeuvre -> relation avec oeuvre
-        - date de creation
+        - id //
+        - auteur -> relation avec user //
+        - oeuvre -> relation avec oeuvre //
+        - date de creation //
+        - dernière modification //
         - reponse -> relation avec commentaire
         
     Table tag?

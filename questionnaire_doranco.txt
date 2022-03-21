@@ -7,7 +7,7 @@
 6. Quels sont les points forts que vous tirez de la concurrence? Et lesquels avez-vous utilisés?°
 7. Quelles sont les extensions utilisées sur WordPress?°//
 8. Votre site est-il terminé?
-9. Est-ce toutes vos pages comportent un titre (balise H1)?
+9. Est-ce toutes vos pages comportent un titre (balise H1)?//
 10. Avez-vous pensé à placer un FavIcon à côté de votre URL?
 11. Votre site comporte-t-il les mentions légales dans le pied de page?
 12. Avez-vous créé une page spéciale de la politique de confidentialité que vous avez placé dans le pied de page?
@@ -20,7 +20,7 @@
 19. Sur quels réseaux sociaux allez-vous vous reposer en complément de votre site?°
 20. Avez-vous créé des personas (3 minimum)?//
 21. Avez-vous réalisé un SWOT?
-22. Avez-vous mis en place un Digramme e GANTT ou Planning prévisionnel?
+22. Avez-vous mis en place un Digramme e GANTT ou Planning prévisionnel?//
 23. Votre cahier des charges est-il bien structuré (numéroté et illustré)?
 24. Votre cahier des charges comporte-t-il des fautes d’orthographe?
 25. Architecture de projet : avez-vous fait un squelette de votre site?//

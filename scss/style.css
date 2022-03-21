@@ -756,6 +756,9 @@ main .galerie-list .grid {
         -ms-flex-align: center;
             align-items: center;
   }
+  main .galerie-list .grid {
+    width: 100%;
+  }
 }
 
 main .pagination {
